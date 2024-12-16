@@ -149,8 +149,10 @@ pre {
  * Wrapper
  */
  .button-wrapper {
-  margin:auto;
-  display:block;}
+  position: fixed;
+  left: 50%;
+  top:50%;
+}
 .wrapper {
   max-width: -webkit-calc(800px - (30px * 2));
   max-width: calc(800px - (30px * 2));
