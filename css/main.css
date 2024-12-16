@@ -149,8 +149,8 @@ pre {
  * Wrapper
  */
  .button-wrapper {
-  text-align: center;
-}
+  margin:auto;
+  display:block;}
 .wrapper {
   max-width: -webkit-calc(800px - (30px * 2));
   max-width: calc(800px - (30px * 2));
