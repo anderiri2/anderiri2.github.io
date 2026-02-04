@@ -4,84 +4,81 @@
 
 <body>
 
-    <nav id="menu" class="menu">
-      <header>
-        <section class="menu-section">
-          <h3 class="menu-section-title">Menu</h3>
-          <ul class="menu-section-list">
-              <li><a class="page-link" href="{{site.github.url}}/">About</a>
-             <li><a class="page-link" href="{{site.github.url}}/research">Research</a></li>
-              <li><a class="page-link" href="{{site.github.url}}/talks"> Talks </a></li>
-              <!-- <li><a class="page-link" href="{{site.github.url}}/rishabh_cv.pdf"> CV </a></li> -->
-          </ul>
-        </section>
-      </header>
-    </nav>
-
-
-    <main id="panel">
-      <div class="page-content">
-        <div class="wrapper container">
-          <header>
-            <nav class="site-header">
-              <div class="row">
-                <div class="menu-toggle"><button class="toggle-button"><i class="icon fa fa-bars"></i></button></div>
-
-                <div class="site-title"><a href="/">Ander Iriondo Azpiri</a></div>
-
-              </div>
-              <div class="desktop-menu">
-                <ul>
-                    <li><a href="{{site.github.url}}/"> About </a></li>
-                    <li><a href="{{site.github.url}}/research"> Research</a></li>
-                    <li><a href="{{site.github.url}}/talks"> Talks </a></li>
-                    <!-- <li><a href="{{site.github.url}}/rishabh_cv.pdf"> CV </a></li> -->
-                </ul>
-              </div>
-            </nav>
-          </header>
-
-
-          {{content}}
-
-        </div>
-
-      </div>
-
-      <div class="invisible-divider"></div>
-      <footer class="site-footer">
-  <div class="container">
-    <div class="row">
-      <div class="force seven columns">
-        <ul class="contact-list">
-          <li class="social-links">
-            
-            <a href="https://www.linkedin.com/in/andeririondo/" target="_blank">
-              <i class="fa fa-linkedin fa-10x" style="color:#0e76a8"> </i> andeririondo
-            </a>
-            <a href="https://scholar.google.es/citations?user=Hy-Z3PoAAAAJ&hl=en" target="_blank">
-              <i class="ai ai-google-scholar ai-10x" style="color:#0e76a8"> </i> Google Scholar
-            </a>
-            <!-- <a href="bitcoin:bc1p3ahap9y3gky4gxgt4l9rsdugtjcnl2jjduce7wkcjy0r7rx2d6esu5agsh" target="_blank">
-              <img src="images/bitcoin.png" style="width: 20px"> Bitcoin
-            </a> -->
-          </li>
+  <nav id="menu" class="menu">
+    <header>
+      <section class="menu-section">
+        <h3 class="menu-section-title">Menu</h3>
+        <ul class="menu-section-list">
+          <li><a class="page-link" href="{{site.github.url}}/">About</a>
+          <li><a class="page-link" href="{{site.github.url}}/research">Research</a></li>
+          <li><a class="page-link" href="{{site.github.url}}/talks"> Talks </a></li>
+          <!-- <li><a class="page-link" href="{{site.github.url}}/rishabh_cv.pdf"> CV </a></li> -->
         </ul>
+      </section>
+    </header>
+  </nav>
+
+
+  <main id="panel">
+    <div class="page-content">
+      <div class="wrapper container">
+        <header>
+          <nav class="site-header">
+            <div class="row">
+              <div class="menu-toggle"><button class="toggle-button"><i class="icon fa fa-bars"></i></button></div>
+
+              <div class="site-title"><a href="/">Ander Iriondo Azpiri</a></div>
+
+            </div>
+            <div class="desktop-menu">
+              <ul>
+                <li><a href="{{site.github.url}}/"> About </a></li>
+                <li><a href="{{site.github.url}}/research"> Research</a></li>
+                <li><a href="{{site.github.url}}/talks"> Talks </a></li>
+                <!-- <li><a href="{{site.github.url}}/rishabh_cv.pdf"> CV </a></li> -->
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+
+        {{content}}
+
       </div>
-      <div class="force five columns">
-        <p class="site-description">
-          <a href="mailto:ander.iriondo@tekniker.es" style="color:#211F1F">ander.iriondo@tekniker.es</a>
-        </p>
-        <p class="site-description">
-          <a href="mailto:anderiri2@gmail.com" style="color:#211F1F">anderiri2@gmail.com</a>
-        </p>
-      </div>
+
     </div>
-  </div>
-</footer>
 
-    </main>
+    <div class="invisible-divider"></div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row"
+          style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 2rem;">
+          <div class="six columns" style="margin: 0;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">Connect</h3>
+            <div class="social-links-grid" style="display: flex; gap: 1.5rem; font-size: 1.2rem;">
+              <a href="https://www.linkedin.com/in/andeririondo/" target="_blank" title="LinkedIn"
+                style="color: #0077b5;">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="https://scholar.google.es/citations?user=Hy-Z3PoAAAAJ&hl=en" target="_blank"
+                title="Google Scholar" style="color: #4285f4;">
+                <i class="ai ai-google-scholar"></i>
+              </a>
+              <a href="mailto:anderiri2@gmail.com" title="Email" style="color: var(--text-light);">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <div class="six columns" style="margin: 0; text-align: right;">
+            <p style="margin-bottom: 0.5rem;">&copy; {{ site.time | date: '%Y' }} Ander Iriondo Azpiri</p>
+            <p style="font-size: 0.85rem; color: var(--text-light);">Built with Jekyll & Modern CSS</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  </body>
+  </main>
+
+</body>
 
 </html>
