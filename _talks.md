@@ -1,7 +1,7 @@
 ---
 year: 2025
 title: "Virtual to Reality: Simulation-Driven Perception and Grasping for Robots"
-venue: "ERF 2025 - 12th Hybrid Production Systems Workshop"
+venue: "ERF 2025 - 12th Hybrid Production Systems Workshop (Stuttgart)"
 link: 
 ---
 ---
