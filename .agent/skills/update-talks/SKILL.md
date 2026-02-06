@@ -14,9 +14,9 @@ Whenever you are requested to update the talks section, use this skill.
 
 ## How to use it
 
-1. Read the [talks.md] file.
+1. Read the [_talks.md] file.
 2. Synchronize the [talks.html] file.
-3. **Ordering**: Group talks by `year` in descending order. Within each year, maintain the order present in `talks.md`.
+3. **Ordering**: Group talks by `year` in descending order. Within each year, maintain the order present in `_talks.md`.
 4. **HTML Format**:
    - For each group of talks in the same year:
      - The year starts with a single heading: `<h2 class="talk-year-heading">YEAR</h2>`
@@ -27,7 +27,7 @@ Whenever you are requested to update the talks section, use this skill.
        </div>
        ```
        (If no link is provided, omit the `<a>` tag: `Talk on "TITLE" at VENUE.`)
-5. **Clean management**: Like the news skill, you should remove any items in `talks.html` that are not in `talks.md` to ensure consistent management.
+5. **Clean management**: Like the news skill, you should remove any items in `talks.html` that are not in `_talks.md` to ensure consistent management.
 
 ## Example Markdown Format:
 

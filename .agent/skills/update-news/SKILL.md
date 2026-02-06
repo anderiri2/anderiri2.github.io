@@ -13,7 +13,7 @@ This skill updates the news section of the webpage. It reads the news.md file an
 
 ## How to use it
 
-Whenever you are requested to update the news section, use this skill. First, read the news.md file and synchronize the news section of the index.html file. You should REMOVE any news in index.html that are not present in news.md to keep the section clean and managed solely via news.md. The style of the news section has to be consistent with the rest of the webpage. The news.md file has the following format: 
+Whenever you are requested to update the news section, use this skill. First, read the _news.md file and synchronize the news section of the index.html file. You should REMOVE any news in index.html that are not present in _news.md to keep the section clean and managed solely via _news.md. The style of the news section has to be consistent with the rest of the webpage. The _news.md file has the following format: 
 
 ```markdown
 ---
