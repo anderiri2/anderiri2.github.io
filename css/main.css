@@ -434,14 +434,133 @@ pre .lineno {
   }
 }
 
-#menu {
-  background-color: #e8e8e8;
-}
-
 @media screen and (min-width: 550px) {
   #menu {
     display: none;
   }
+}
+
+/* 
+ * Mobile Side Menu (Slideout)
+ */
+#menu {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 2.5rem 1.5rem;
+  height: 100vh;
+  z-index: 0;
+  overflow-y: auto;
+  box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.2);
+  /* Slideout.js specific */
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  display: none;
+}
+
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 150px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: var(--bg);
+  /* Ensure panel has a background */
+  min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+.menu-section-title {
+  color: var(--white);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-section-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-section-list li {
+  margin-bottom: 0.5rem;
+}
+
+.menu .page-link {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.menu .page-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  transform: translateX(5px);
+}
+
+.menu .page-link:active {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+/* Improved Toggle Button */
+.toggle-button {
+  background: transparent;
+  border: none;
+  color: var(--primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.toggle-button:hover {
+  color: var(--accent);
 }
 
 /*
@@ -459,37 +578,7 @@ pre .lineno {
   border: 1px solid #2a7ae2;
 }
 
-.menu-section-title {
-  color: var(--white);
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid var(--primary-light);
-  padding-bottom: 0.5rem;
-}
-
-.menu {
-  line-height: 56px;
-}
-
-.menu ul {
-  list-style: none;
-  margin-left: 0;
-}
-
-.menu .page-link {
-  color: var(--white);
-  font-family: 'Inter', sans-serif;
-  font-size: 1.1rem;
-  padding: 1rem 0.5rem;
-  border-radius: var(--radius);
-  transition: background 0.2s;
-}
-
-.menu .page-link:hover {
-  background-color: var(--primary-light);
-  text-decoration: none;
-}
+/* Old menu styles replaced above */
 
 /*
  * Archive
