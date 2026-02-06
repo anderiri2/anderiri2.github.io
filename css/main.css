@@ -434,7 +434,7 @@ pre .lineno {
   }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 768px) {
   #menu {
     display: none;
   }
@@ -444,7 +444,7 @@ pre .lineno {
  * Mobile Side Menu (Slideout)
  */
 #menu {
-  background-color: var(--primary);
+  background-color: var(--primary) !important;
   color: var(--white);
   padding: 2.5rem 1.5rem;
   height: 100vh;
@@ -496,7 +496,8 @@ pre .lineno {
   overflow: hidden;
 }
 
-.slideout-open .slideout-menu {
+.slideout-open .slideout-menu,
+.slideout-open #menu {
   display: block;
 }
 
