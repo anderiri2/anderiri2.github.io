@@ -214,7 +214,9 @@ pre,
 code {
   font-size: 15px;
   border-radius: 3px;
-  background-color: whitesmoke;
+  background-color: var(--white);
+  color: var(--text);
+  border: 1px solid var(--border);
 }
 
 code {
@@ -350,17 +352,17 @@ pre .lineno {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(var(--white), 0.8);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(var(--border), 0.5);
+  background: var(--white);
+  opacity: 0.95;
   display: flex;
   align-items: center;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 [data-theme='dark'] .site-header {
-  background: rgba(15, 23, 42, 0.8);
+  background: var(--bg);
+  opacity: 0.95;
+  border-bottom: 1px solid var(--border);
 }
 
 .header-container {
@@ -555,6 +557,7 @@ pre .lineno {
 .slideout-open .slideout-menu,
 .slideout-open #menu {
   display: block;
+  background-color: var(--bg);
 }
 
 .menu-section-title {
@@ -652,9 +655,11 @@ pre .lineno {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid var(--border);
   padding: 30px 0;
   font-size: 14px;
+  background-color: var(--bg);
+  color: var(--text-light);
 }
 
 .site-footer .footer-heading {
@@ -1624,7 +1629,7 @@ body {
   position: relative;
   z-index: 1;
   will-change: transform;
-  background-color: #FFF;
+  background-color: var(--bg);
   /* A background-color is required */
   min-height: 100vh;
 }
@@ -1706,7 +1711,7 @@ html {
 
 .site-footer .social-links a i {
   font-size: 20px;
-  color: #828282;
+  color: var(--text-light);
 }
 
 label {
@@ -1856,7 +1861,8 @@ table td:not(:last-child) {
 }
 
 table tr:nth-child(even) {
-  background: #e8e8e8;
+  background: var(--white);
+  opacity: 0.8;
 }
 
 /*
