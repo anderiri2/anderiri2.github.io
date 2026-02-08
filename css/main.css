@@ -502,13 +502,14 @@ pre .lineno {
  * Mobile Side Menu (Slideout)
  */
 #menu {
-  background-color: var(--bg) !important;
-  border-right: 1px solid var(--border);
-  color: var(--text);
+  background-color: #1e293b !important;
+  /* Dark blue-grey for light theme */
+  color: #f1f5f9;
   padding: 2.5rem 1.5rem;
   height: 100vh;
   z-index: 0;
   overflow-y: auto;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
   /* Slideout.js specific */
   position: fixed;
   left: 0;
@@ -516,6 +517,13 @@ pre .lineno {
   bottom: 0;
   width: 150px;
   display: none;
+}
+
+[data-theme='dark'] #menu {
+  background-color: #f8fafc !important;
+  /* Light grey for dark theme */
+  color: #1e293b;
+  border-right: 1px solid #e2e8f0;
 }
 
 .slideout-menu {
@@ -557,11 +565,10 @@ pre .lineno {
 .slideout-open .slideout-menu,
 .slideout-open #menu {
   display: block;
-  background-color: var(--bg);
 }
 
 .menu-section-title {
-  color: var(--primary);
+  color: #ffffff;
   font-family: 'Outfit', sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
@@ -569,7 +576,12 @@ pre .lineno {
   text-transform: uppercase;
   margin-bottom: 2rem;
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .menu-section-title {
+  color: #1e293b;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .menu-section-list {
@@ -584,7 +596,7 @@ pre .lineno {
 
 .menu .page-link {
   display: block;
-  color: var(--text-light);
+  color: rgba(255, 255, 255, 0.8);
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
@@ -594,10 +606,19 @@ pre .lineno {
   text-decoration: none;
 }
 
+[data-theme='dark'] .menu .page-link {
+  color: #64748b;
+}
+
 .menu .page-link:hover {
-  background-color: var(--border);
-  color: var(--accent);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
   transform: translateX(5px);
+}
+
+[data-theme='dark'] .menu .page-link:hover {
+  background-color: #e2e8f0;
+  color: #3b82f6;
 }
 
 .menu .page-link:active {
