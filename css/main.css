@@ -500,13 +500,13 @@ pre .lineno {
  * Mobile Side Menu (Slideout)
  */
 #menu {
-  background-color: var(--primary) !important;
-  color: var(--white);
+  background-color: var(--bg) !important;
+  border-right: 1px solid var(--border);
+  color: var(--text);
   padding: 2.5rem 1.5rem;
   height: 100vh;
   z-index: 0;
   overflow-y: auto;
-  box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.2);
   /* Slideout.js specific */
   position: fixed;
   left: 0;
@@ -558,7 +558,7 @@ pre .lineno {
 }
 
 .menu-section-title {
-  color: var(--white);
+  color: var(--primary);
   font-family: 'Outfit', sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
@@ -566,7 +566,7 @@ pre .lineno {
   text-transform: uppercase;
   margin-bottom: 2rem;
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--border);
 }
 
 .menu-section-list {
@@ -581,7 +581,7 @@ pre .lineno {
 
 .menu .page-link {
   display: block;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-light);
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
@@ -592,8 +592,8 @@ pre .lineno {
 }
 
 .menu .page-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--white);
+  background-color: var(--border);
+  color: var(--accent);
   transform: translateX(5px);
 }
 
