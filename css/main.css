@@ -17,6 +17,20 @@
   --header-height: 80px;
 }
 
+[data-theme='dark'] {
+  --primary: #f1f5f9;
+  --primary-light: #cbd5e1;
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --text-light: #94a3b8;
+  --white: #1e293b;
+  --border: #334155;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+}
+
 
 /**
  * Reset some basic elements
@@ -144,16 +158,16 @@ h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: var(--accent);
   text-decoration: none;
 }
 
 a:visited {
-  color: #1756a9;
+  color: var(--accent);
 }
 
 a:hover {
-  color: #6da4eb;
+  color: var(--accent-hover);
   text-decoration: underline;
 }
 
@@ -336,13 +350,17 @@ pre .lineno {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(var(--white), 0.8);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+  border-bottom: 1px solid rgba(var(--border), 0.5);
   display: flex;
   align-items: center;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme='dark'] .site-header {
+  background: rgba(15, 23, 42, 0.8);
 }
 
 .header-container {
@@ -431,6 +449,44 @@ pre .lineno {
 
   .header-container {
     padding: 0 1.5rem;
+  }
+}
+
+/* Theme Toggle Button */
+.theme-toggle-container {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.theme-toggle:hover {
+  background-color: var(--border);
+  color: var(--accent);
+}
+
+[data-theme='dark'] .theme-toggle:hover {
+  background-color: var(--primary-light);
+}
+
+@media screen and (max-width: 768px) {
+  .theme-toggle-container {
+    margin-left: 0.5rem;
   }
 }
 
@@ -1051,7 +1107,7 @@ pre .lineno {
 .invisible-divider {
   margin-top: 3em;
   margin-bottom: 2em;
-  border-top: 1px solid whitesmoke;
+  border-top: 1px solid var(--border);
 }
 
 .divider .invert,
