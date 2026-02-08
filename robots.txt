@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anderiri2.github.io/sitemap.xml

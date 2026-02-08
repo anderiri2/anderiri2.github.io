@@ -5,10 +5,16 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 
-name: Tekniker
-url: anderiri2.github.io
+name: Ander Iriondo Azpiri
+url: "https://anderiri2.github.io"
+baseurl: "" # the subpath of your site, e.g. /blog
 enforce_ssl: anderiri2.github.io
-description: Ander Iriondo's personal website
+description: >- # this means to ignore newlines until "baseurl:"
+  Personal website of Ander Iriondo Azpiri, Researcher in AI & Robotics at Tekniker. 
+  PhD in Artificial Intelligence and Robotics focusing on Deep Reinforcement Learning.
+author: Ander Iriondo Azpiri
+twitter_username: andeririondo # Assuming this is the username
+google_scholar: Hy-Z3PoAAAAJ
 
 collections:
   ml:

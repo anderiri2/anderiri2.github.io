@@ -11,13 +11,50 @@
   <meta name="google-site-verification" content="Cg8yLhyulyPuQaGVyOIGr3OPgS6NDLSjOB8GbgKRrSY" />
 
 
-  <title> {% if page.title %}
-    {{ page.title }} &ndash;
-    {% endif %}
-    {{ site.name }}</title>
-  <link rel="icon" href="{{site.github.url}}/images/logov2.png" />
+  <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.name }}</title>
+  <link rel="icon" href="{{ site.url }}/images/logov2.png" />
 
-  <meta name="description" content="Ander Iriondo's Personal Website'">
+  <meta name="description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+  <meta property="og:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:image" content="{{ '/images/Ander_Iriondo.jpg' | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ page.url | absolute_url }}">
+  <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+  <meta property="twitter:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="twitter:image" content="{{ '/images/Ander_Iriondo.jpg' | absolute_url }}">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ander Iriondo Azpiri",
+    "url": "{{ site.url }}",
+    "image": "{{ '/images/Ander_Iriondo.jpg' | absolute_url }}",
+    "jobTitle": "Researcher in AI & Robotics",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Tekniker"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/andeririondo/",
+      "https://scholar.google.es/citations?user={{ site.google_scholar }}&hl=en"
+    ],
+    "description": "{{ site.description }}"
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,8 +70,6 @@
   <link type="text/css" rel="stylesheet" href="{{ '/css/fira_font.css' | relative_url }}">
   <link type="text/css" rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-  <!-- <link rel="shortcut icon" href="{{site.github.url}}/favicon.ico"> -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
   <script type="text/javascript" src="{{ '/js/theme.js' | relative_url }}"></script>
