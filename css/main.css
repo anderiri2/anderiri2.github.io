@@ -1461,6 +1461,170 @@ pre .lineno {
   border-color: var(--accent);
 }
 
+/*
+ * CV / Resume page
+ */
+.cv-header {
+  position: relative;
+  padding: 2.5rem 0 2rem;
+  margin-bottom: 1rem;
+}
+
+.cv-header::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle at 40% 40%, var(--glow), transparent 70%),
+    radial-gradient(circle at 70% 70%, var(--glow-2), transparent 70%);
+  filter: blur(20px);
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.cv-name {
+  font-size: clamp(2rem, 4.5vw, 2.75rem);
+  line-height: 1.1;
+  margin-bottom: 0.4rem;
+}
+
+.cv-role {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.cv-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+.cv-contact a {
+  color: var(--text-light);
+  transition: color 0.2s ease;
+}
+
+.cv-contact a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.cv-contact i {
+  color: var(--accent);
+  margin-right: 0.45rem;
+  width: 1.1em;
+  text-align: center;
+}
+
+.cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Timeline-style entry: date column + body */
+.cv-entry {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 0.25rem 1.5rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.cv-entry:last-child {
+  border-bottom: none;
+}
+
+.cv-date {
+  font-family: 'Fira Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  padding-top: 0.15rem;
+}
+
+.cv-entry-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+}
+
+.cv-entry-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--primary);
+}
+
+.cv-entry-org {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.cv-entry-detail {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-top: 0.35rem;
+}
+
+.cv-entry-detail ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.cv-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-2);
+  background: color-mix(in srgb, var(--accent-2) 12%, transparent);
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.cv-langs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.cv-langs li {
+  color: var(--text);
+}
+
+.cv-langs strong {
+  color: var(--primary);
+}
+
+@media screen and (max-width: 600px) {
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .cv-date {
+    padding-top: 0;
+  }
+}
+
 .card:nth-child(even) .divider,
 .card:nth-child(even) .invisible-divider {
   border-top: 1px solid #fdfdfd;
