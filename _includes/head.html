@@ -16,24 +16,32 @@
 
   <meta name="description"
     content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:description"
     content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:image" content="{{ '/images/Ander_Iriondo.jpg' | absolute_url }}">
+  <meta property="og:image:alt" content="Ander Iriondo Azpiri">
+  <meta property="og:image:width" content="3543">
+  <meta property="og:image:height" content="2362">
   <meta property="og:site_name" content="{{ site.name }}">
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="{{ page.url | absolute_url }}">
-  <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
-  <meta property="twitter:description"
+  <meta name="twitter:card" content="summary_large_image">
+  {% if site.twitter_username %}<meta name="twitter:site" content="@{{ site.twitter_username }}">
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">{% endif %}
+  <meta name="twitter:url" content="{{ page.url | absolute_url }}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+  <meta name="twitter:description"
     content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="twitter:image" content="{{ '/images/Ander_Iriondo.jpg' | absolute_url }}">
+  <meta name="twitter:image" content="{{ '/images/Ander_Iriondo.jpg' | absolute_url }}">
+  <meta name="twitter:image:alt" content="Ander Iriondo Azpiri">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -46,8 +54,20 @@
     "jobTitle": "Researcher in AI & Robotics",
     "worksFor": {
       "@type": "Organization",
-      "name": "Tekniker"
+      "name": "Tekniker",
+      "url": "https://www.tekniker.es"
     },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of the Basque Country (UPV/EHU)"
+    },
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Robotics",
+      "Deep Reinforcement Learning",
+      "Computer Vision",
+      "Robotic Manipulation"
+    ],
     "sameAs": [
       "https://www.linkedin.com/in/andeririondo/",
       "https://scholar.google.es/citations?user={{ site.google_scholar }}&hl=en"
