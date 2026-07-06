@@ -1,0 +1,18 @@
+# Maps a logical page "ref" to its URL in each language.
+# Used to build the nav, the language switcher, and hreflang tags.
+home:
+  en: /
+  eu: /eu/
+  es: /es/
+research:
+  en: /research.html
+  eu: /eu/research.html
+  es: /es/research.html
+talks:
+  en: /talks.html
+  eu: /eu/talks.html
+  es: /es/talks.html
+cv:
+  en: /cv.html
+  eu: /eu/cv.html
+  es: /es/cv.html

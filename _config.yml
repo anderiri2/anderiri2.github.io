@@ -6,6 +6,8 @@ plugins:
   - jekyll-redirect-from
 
 name: Ander Iriondo Azpiri
+languages: [en, eu, es]
+default_lang: en
 url: "https://anderiri2.github.io"
 baseurl: "" # the subpath of your site, e.g. /blog
 enforce_ssl: anderiri2.github.io

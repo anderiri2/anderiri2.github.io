@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: site.default_lang | default: 'en' }}">
 {% include head.html %}
 
 <body>
 
+  {% assign body_lang = page.lang | default: site.default_lang | default: 'en' %}
+  {% assign body_t = site.data.i18n[body_lang] %}
+
   <nav id="menu" class="menu">
     <header>
       <section class="menu-section">
-        <h3 class="menu-section-title">Menu</h3>
+        <h3 class="menu-section-title">{{ body_t.menu_title }}</h3>
         <ul class="menu-section-list">
-          <li><a class="page-link" href="{{site.github.url}}/">About</a></li>
-          <li><a class="page-link" href="{{site.github.url}}/research">Research</a></li>
-          <li><a class="page-link" href="{{site.github.url}}/talks"> Talks </a></li>
-          <li><a class="page-link" href="{{site.github.url}}/cv.html"> CV </a></li>
+          {% include nav_links.html class="page-link" %}
         </ul>
+        {% include lang_switch.html class="lang-switch-mobile" %}
       </section>
     </header>
   </nav>
@@ -29,20 +30,19 @@
                 <div class="menu-toggle">
                   <button class="toggle-button"><i class="icon fa fa-bars"></i></button>
                 </div>
-                <div class="site-title"><a href="/">Ander Iriondo Azpiri</a></div>
+                <div class="site-title"><a href="{{ site.github.url }}/">Ander Iriondo Azpiri</a></div>
               </div>
 
               <nav class="desktop-menu">
                 <ul>
-                  <li><a href="{{site.github.url}}/">About</a></li>
-                  <li><a href="{{site.github.url}}/research">Research</a></li>
-                  <li><a href="{{site.github.url}}/talks">Talks</a></li>
-                  <li><a href="{{site.github.url}}/cv.html">CV</a></li>
+                  {% include nav_links.html %}
                 </ul>
               </nav>
 
+              {% include lang_switch.html class="lang-switch-desktop" %}
+
               <div class="theme-toggle-container">
-                <button class="theme-toggle" aria-label="Toggle dark mode">
+                <button class="theme-toggle" aria-label="{{ body_t.theme_toggle }}">
                   <i class="fa fa-moon-o"></i>
                 </button>
               </div>
@@ -63,7 +63,7 @@
         <div class="row"
           style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 2rem;">
           <div class="six columns" style="margin: 0;">
-            <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">Connect</h3>
+            <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">{{ body_t.footer_connect }}</h3>
             <div class="social-links-grid" style="display: flex; gap: 1.5rem; font-size: 1.2rem;">
               <a href="https://www.linkedin.com/in/andeririondo/" target="_blank" title="LinkedIn"
                 style="color: #0077b5;">
@@ -80,7 +80,7 @@
           </div>
           <div class="six columns" style="margin: 0; text-align: right;">
             <p style="margin-bottom: 0.5rem;">&copy; {{ site.time | date: '%Y' }} Ander Iriondo Azpiri</p>
-            <p style="font-size: 0.85rem; color: var(--text-light);">Built with Jekyll & Modern CSS</p>
+            <p style="font-size: 0.85rem; color: var(--text-light);">{{ body_t.footer_built }}</p>
           </div>
         </div>
       </div>

@@ -1,0 +1,7 @@
+{% assign lang = page.lang | default: site.default_lang | default: 'en' %}
+{% assign t = site.data.i18n[lang] %}
+{% for item in site.data.nav %}
+  {% assign urlmap = site.data.pages[item.ref] %}
+  {% assign href = urlmap[lang] | default: urlmap[site.default_lang] %}
+  <li><a{% if include.class %} class="{{ include.class }}"{% endif %} href="{{ site.github.url }}{{ href }}"{% if page.ref == item.ref %} aria-current="page"{% endif %}>{{ t[item.label_key] }}</a></li>
+{% endfor %}

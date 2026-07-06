@@ -1,0 +1,9 @@
+# Site navigation, in order. label_key looks up the string in _data/i18n.yml.
+- ref: home
+  label_key: nav_about
+- ref: research
+  label_key: nav_research
+- ref: talks
+  label_key: nav_talks
+- ref: cv
+  label_key: nav_cv

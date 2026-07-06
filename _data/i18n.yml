@@ -1,0 +1,35 @@
+en:
+  lang_name: English
+  nav_about: About
+  nav_research: Research
+  nav_talks: Talks
+  nav_cv: CV
+  menu_title: Menu
+  theme_toggle: Toggle dark mode
+  lang_switch_label: Language
+  footer_connect: Connect
+  footer_built: "Built with Jekyll & Modern CSS"
+
+eu:
+  lang_name: Euskara
+  nav_about: Ni buruz
+  nav_research: Ikerketa
+  nav_talks: Hitzaldiak
+  nav_cv: CV
+  menu_title: Menua
+  theme_toggle: Modu iluna aldatu
+  lang_switch_label: Hizkuntza
+  footer_connect: Kontaktua
+  footer_built: "Jekyll eta CSS modernoarekin eraikia"
+
+es:
+  lang_name: Español
+  nav_about: Sobre mí
+  nav_research: Investigación
+  nav_talks: Charlas
+  nav_cv: CV
+  menu_title: Menú
+  theme_toggle: Cambiar modo oscuro
+  lang_switch_label: Idioma
+  footer_connect: Conecta
+  footer_built: "Creado con Jekyll y CSS moderno"

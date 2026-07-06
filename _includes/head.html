@@ -19,9 +19,19 @@
   {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
+  {% assign head_lang = page.lang | default: site.default_lang | default: 'en' %}
+  {% assign head_refdata = site.data.pages[page.ref] %}
+  {% if head_refdata %}
+  {% for l in site.languages %}
+  {% assign href = head_refdata[l] %}
+  {% if href %}<link rel="alternate" hreflang="{{ l }}" href="{{ href | absolute_url }}">{% endif %}
+  {% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ head_refdata[site.default_lang] | absolute_url }}">
+  {% endif %}
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
+  <meta property="og:locale" content="{{ site.data.locale_map[head_lang] | default: 'en_US' }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:description"
