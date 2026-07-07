@@ -1396,6 +1396,30 @@ a.lang-link:hover {
   transform: scale(1.02);
 }
 
+.publication-video {
+  flex-shrink: 0;
+  width: 240px;
+  aspect-ratio: 16 / 9;
+  border-radius: calc(var(--radius) / 2);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow);
+}
+
+.publication-video iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .publication-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+}
+
 .publication-content {
   display: flex;
   flex-direction: column;
