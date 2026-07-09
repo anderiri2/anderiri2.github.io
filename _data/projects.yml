@@ -1,0 +1,27 @@
+# Projects portfolio (currently hidden — projects.html has noindex/sitemap:false
+# and no eu/es translation, no nav entry). `tags` and `links` are single-language.
+# `media_type` is one of: image | video | iframe.
+- id: bin-packing-mosaic
+  title:
+    en: "Dynamic Mosaic Planning for a Robotic Bin-Packing System"
+    eu: "Errobota bidezko Bin-Packing Sistema baterako Mosaiko Planifikazio Dinamikoa"
+    es: "Planificación Dinámica de Mosaico para un Sistema Robótico de Bin-Packing"
+  tags: ["Bin-Packing", "Manipulation", "Online Planning"]
+  description:
+    en: >-
+      Developed in the context of the European project PICKPLACE, this system lets a robot pack a wide variety of
+      objects into containers without reconfiguring for each new reference. It combines online monitoring of both
+      the picked part and the destination box — estimating free space as empty maximal spaces (EMS) — with a
+      dynamic mosaic planner (IK-PAL) that recalculates the best packing pose in real time, accounting for drops
+      and unexpected movements inside the bin. Validated on a real picking-and-packing robotic system across 7
+      tests of increasing complexity.
+    eu: ""
+    es: ""
+  media_type: iframe
+  media_src: "https://www.youtube.com/embed/videoseries?list=PL_GgcbyQtUA8mYSnrz8svYrNeLZUWhwH1"
+  media_alt: "Dynamic mosaic planning for a robotic bin-packing system — test videos"
+  links:
+    - label: Paper
+      url: "https://doi.org/10.1007/s00170-022-10601-9"
+    - label: Video
+      url: "https://www.youtube.com/playlist?list=PL_GgcbyQtUA8mYSnrz8svYrNeLZUWhwH1"

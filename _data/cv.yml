@@ -1,0 +1,120 @@
+# CV content. Every translatable field is a per-language object {en, eu, es};
+# `org` is always an object too for schema uniformity in the CMS, even where
+# the text is identical across languages (only place names actually differ).
+experience:
+  - id: tekniker-phd-researcher
+    date: {en: "2023 – today", eu: "2023 – gaur egun", es: "2023 – actualidad"}
+    title: {en: "PhD researcher", eu: "Doktore ikertzailea", es: "Investigador Doctor"}
+    org: {en: "Fundación Tekniker", eu: "Fundación Tekniker", es: "Fundación Tekniker"}
+    detail:
+      en: "Artificial intelligence, flexible robotics and computer vision."
+      eu: "Adimen artifiziala, robotika malgua eta ikusmen artifiziala."
+      es: "Inteligencia artificial, robótica flexible y visión por computador."
+
+  - id: tekniker-predoctoral-researcher
+    date: {en: "2018 – 2023", eu: "2018 – 2023", es: "2018 – 2023"}
+    title: {en: "Pre-doctoral researcher", eu: "Ikertzaile predoktorala", es: "Investigador predoctoral"}
+    org: {en: "Fundación Tekniker", eu: "Fundación Tekniker", es: "Fundación Tekniker"}
+    detail:
+      en: "Thesis: Advances in flexible manipulation through the application of AI-based techniques."
+      eu: "Tesia: Manipulazio malguaren aurrerapenak, AAn oinarritutako teknikak aplikatuz."
+      es: "Tesis: Avances en manipulación flexible mediante la aplicación de técnicas basadas en IA."
+
+  - id: tekniker-internship-master-thesis
+    date: {en: "2017 – 2018", eu: "2017 – 2018", es: "2017 – 2018"}
+    title: {en: "Internship & master thesis", eu: "Praktikak eta master amaierako lana", es: "Prácticas y trabajo fin de máster"}
+    org: {en: "Fundación Tekniker", eu: "Fundación Tekniker", es: "Fundación Tekniker"}
+    detail:
+      en: "Thesis: Control of a mobile manipulator robot with deep reinforcement learning."
+      eu: "Tesia: Robot manipulatzaile mugikor baten kontrola, errefortzuko ikaskuntza sakonarekin."
+      es: "Tesis: Control de un robot manipulador móvil mediante aprendizaje por refuerzo profundo."
+
+  - id: tekniker-end-of-degree-project
+    date: {en: "2017", eu: "2017", es: "2017"}
+    title: {en: "End-of-degree project", eu: "Gradu amaierako lana", es: "Trabajo Fin de Grado"}
+    org: {en: "Fundación Tekniker", eu: "Fundación Tekniker", es: "Fundación Tekniker"}
+    detail:
+      en: "Thesis: Development of an Android app for the interaction with a social robot, KTbot."
+      eu: "Tesia: KTbot robot sozialarekin interakzioa izateko Android aplikazio baten garapena."
+      es: "Tesis: Desarrollo de una aplicación Android para la interacción con un robot social, KTbot."
+
+education:
+  - id: upvehu-phd-computer-science
+    date: {en: "2018 – 2023", eu: "2018 – 2023", es: "2018 – 2023"}
+    title: {en: "PhD in Computer Science", eu: "Informatikan doktoretza", es: "Doctorado en Informática"}
+    org: {en: "UPV/EHU · San Sebastián", eu: "UPV/EHU · Donostia", es: "UPV/EHU · San Sebastián"}
+    detail: {en: "Faculty of Informatics.", eu: "Informatika Fakultatea.", es: "Facultad de Informática."}
+
+  - id: upvehu-msc-computational-engineering
+    date: {en: "2017 – 2018", eu: "2017 – 2018", es: "2017 – 2018"}
+    title:
+      en: "MSc in Computational Engineering & Intelligent Systems"
+      eu: "Ingeniaritza Konputazionaleko eta Sistema Adimendunen Masterra"
+      es: "Máster en Ingeniería Computacional y Sistemas Inteligentes"
+    org: {en: "UPV/EHU · San Sebastián", eu: "UPV/EHU · Donostia", es: "UPV/EHU · San Sebastián"}
+    detail: {en: "Faculty of Informatics.", eu: "Informatika Fakultatea.", es: "Facultad de Informática."}
+
+  - id: upvehu-bsc-computer-engineering
+    date: {en: "2013 – 2017", eu: "2013 – 2017", es: "2013 – 2017"}
+    title: {en: "BSc in Computer Engineering", eu: "Informatika Ingeniaritzako Gradua", es: "Grado en Ingeniería Informática"}
+    org: {en: "UPV/EHU · San Sebastián", eu: "UPV/EHU · Donostia", es: "UPV/EHU · San Sebastián"}
+    detail: {en: "Faculty of Informatics.", eu: "Informatika Fakultatea.", es: "Facultad de Informática."}
+
+projects:
+  - id: adapta
+    date: {en: "2024 – 2026", eu: "2024 – 2026", es: "2024 – 2026"}
+    title: {en: "ADAPTA", eu: "ADAPTA", es: "ADAPTA"}
+    tag: {en: "Coordinator", eu: "Koordinatzailea", es: "Coordinador"}
+    org: {en: "Transmisiones", eu: "Transmisiones", es: "Transmisiones"}
+    detail:
+      en: "Project coordination. Tekniker's budget: 700 K€."
+      eu: "Proiektuaren koordinazioa. Tekniker-en aurrekontua: 700 K€."
+      es: "Coordinación del proyecto. Presupuesto de Tekniker: 700 K€."
+
+  - id: hartu
+    date: {en: "2023 – 2025", eu: "2023 – 2025", es: "2023 – 2025"}
+    title: {en: "HARTU", eu: "HARTU", es: "HARTU"}
+    tag: {en: "", eu: "", es: ""}
+    org: {en: "Horizon Europe", eu: "Horizon Europe", es: "Horizon Europe"}
+    detail:
+      en: "Research on flexible manipulation through AI-based techniques. Tekniker's budget: 1 M€."
+      eu: "AAn oinarritutako tekniken bidezko manipulazio malguaren ikerketa. Tekniker-en aurrekontua: 1 M€."
+      es: "Investigación en manipulación flexible mediante técnicas basadas en IA. Presupuesto de Tekniker: 1 M€."
+
+  - id: pick-and-place
+    date: {en: "2017 – 2019", eu: "2017 – 2019", es: "2017 – 2019"}
+    title: {en: "Pick and Place", eu: "Pick and Place", es: "Pick and Place"}
+    tag: {en: "", eu: "", es: ""}
+    org: {en: "Horizon 2020", eu: "Horizon 2020", es: "Horizon 2020"}
+    detail:
+      en: "Research on flexible manipulation through AI-based techniques. Tekniker's budget: 1.3 M€."
+      eu: "AAn oinarritutako tekniken bidezko manipulazio malguaren ikerketa. Tekniker-en aurrekontua: 1,3 M€."
+      es: "Investigación en manipulación flexible mediante técnicas basadas en IA. Presupuesto de Tekniker: 1,3 M€."
+
+skills:
+  - en: "Deep Learning"
+    eu: "Ikaskuntza Sakona"
+    es: "Aprendizaje Profundo"
+  - en: "Reinforcement Learning"
+    eu: "Errefortzuko Ikaskuntza"
+    es: "Aprendizaje por Refuerzo"
+  - en: "Computer Vision"
+    eu: "Ikusmen Artifiziala"
+    es: "Visión por Computador"
+  - en: "Robotic Manipulation"
+    eu: "Robot Manipulazioa"
+    es: "Manipulación Robótica"
+  - en: "Hyperspectral Imaging"
+    eu: "Irudi Hiperespektrala"
+    es: "Imagen Hiperespectral"
+  - en: "ROS"
+    eu: "ROS"
+    es: "ROS"
+
+languages_spoken:
+  - name: {en: "English", eu: "Ingelesa", es: "Inglés"}
+    level: {en: "Advanced (C1)", eu: "Aurreratua (C1)", es: "Avanzado (C1)"}
+  - name: {en: "Basque", eu: "Euskara", es: "Euskera"}
+    level: {en: "Advanced (C1)", eu: "Aurreratua (C1)", es: "Avanzado (C1)"}
+  - name: {en: "Spanish", eu: "Gaztelania", es: "Español"}
+    level: {en: "Native", eu: "Ama-hizkuntza", es: "Nativo"}

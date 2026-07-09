@@ -1,0 +1,208 @@
+backend:
+  name: github
+  repo: anderiri2/anderiri2.github.io
+  branch: main
+  base_url: https://REPLACE-WITH-YOUR-OAUTH-WORKER.workers.dev
+  auth_endpoint: auth
+
+# Every edit creates a draft that must be "published" from within the CMS UI
+# before it merges to `main` and goes live.
+publish_mode: editorial_workflow
+
+media_folder: images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: news
+    label: "News"
+    files:
+      - name: news
+        label: "News items"
+        file: _data/news.yml
+        fields:
+          - { label: "Items", name: "items", widget: "list", root: true, fields:
+              - { label: "ID (slug)", name: "id", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+              - label: "Tag"
+                name: "tag"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Euskara", name: "eu", widget: "string", required: false }
+                  - { label: "Español", name: "es", widget: "string", required: false }
+              - label: "Text"
+                name: "text"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "text" }
+                  - { label: "Euskara", name: "eu", widget: "text", required: false }
+                  - { label: "Español", name: "es", widget: "text", required: false }
+              - { label: "Link (optional)", name: "link", widget: "string", required: false, default: "" }
+
+  - name: publications
+    label: "Publications"
+    files:
+      - name: publications
+        label: "Publications"
+        file: _data/publications.yml
+        fields:
+          - label: "Publications"
+            name: "items"
+            widget: "list"
+            root: true
+            fields:
+              - { label: "ID (slug)", name: "id", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Authors", name: "authors", widget: "string" }
+              - { label: "Venue", name: "venue", widget: "string" }
+              - { label: "Link (DOI/URL)", name: "link", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false, default: "" }
+              - { label: "Video embed URL (optional, replaces image)", name: "video", widget: "string", required: false, default: "" }
+
+  - name: talks
+    label: "Talks"
+    files:
+      - name: talks
+        label: "Talks"
+        file: _data/talks.yml
+        fields:
+          - label: "Talks"
+            name: "items"
+            widget: "list"
+            root: true
+            fields:
+              - { label: "ID (slug)", name: "id", widget: "string" }
+              - { label: "Year", name: "year", widget: "number", value_type: "int" }
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Venue"
+                name: "venue"
+                widget: "object"
+                hint: "Basque needs the correct case suffix baked into the text (e.g. 'ERF 2021-en'); Spanish sometimes needs an inserted article (e.g. 'el European Robotics Forum...')."
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Euskara", name: "eu", widget: "string", required: false }
+                  - { label: "Español", name: "es", widget: "string", required: false }
+              - { label: "Link (optional)", name: "link", widget: "string", required: false, default: "" }
+
+  - name: cv
+    label: "CV"
+    files:
+      - name: cv
+        label: "Curriculum Vitae"
+        file: _data/cv.yml
+        fields:
+          - label: "Experience"
+            name: "experience"
+            widget: "list"
+            fields: &cv_entry_fields
+              - { label: "ID (slug)", name: "id", widget: "string" }
+              - label: "Date"
+                name: "date"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Euskara", name: "eu", widget: "string", required: false }
+                  - { label: "Español", name: "es", widget: "string", required: false }
+              - label: "Title"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Euskara", name: "eu", widget: "string", required: false }
+                  - { label: "Español", name: "es", widget: "string", required: false }
+              - label: "Organization"
+                name: "org"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Euskara", name: "eu", widget: "string", required: false }
+                  - { label: "Español", name: "es", widget: "string", required: false }
+              - label: "Detail"
+                name: "detail"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "text" }
+                  - { label: "Euskara", name: "eu", widget: "text", required: false }
+                  - { label: "Español", name: "es", widget: "text", required: false }
+              - label: "Tag (optional, e.g. 'Coordinator')"
+                name: "tag"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "English", name: "en", widget: "string", required: false, default: "" }
+                  - { label: "Euskara", name: "eu", widget: "string", required: false, default: "" }
+                  - { label: "Español", name: "es", widget: "string", required: false, default: "" }
+          - label: "Education"
+            name: "education"
+            widget: "list"
+            fields: *cv_entry_fields
+          - label: "Relevant Projects"
+            name: "projects"
+            widget: "list"
+            fields: *cv_entry_fields
+          - label: "Skills"
+            name: "skills"
+            widget: "list"
+            fields:
+              - { label: "English", name: "en", widget: "string" }
+              - { label: "Euskara", name: "eu", widget: "string", required: false }
+              - { label: "Español", name: "es", widget: "string", required: false }
+          - label: "Languages spoken"
+            name: "languages_spoken"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Euskara", name: "eu", widget: "string", required: false }
+                  - { label: "Español", name: "es", widget: "string", required: false }
+              - label: "Level"
+                name: "level"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Euskara", name: "eu", widget: "string", required: false }
+                  - { label: "Español", name: "es", widget: "string", required: false }
+
+  - name: projects
+    label: "Projects (portfolio)"
+    files:
+      - name: projects
+        label: "Projects"
+        file: _data/projects.yml
+        fields:
+          - label: "Projects"
+            name: "items"
+            widget: "list"
+            root: true
+            fields:
+              - { label: "ID (slug)", name: "id", widget: "string" }
+              - label: "Title"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Euskara", name: "eu", widget: "string", required: false }
+                  - { label: "Español", name: "es", widget: "string", required: false }
+              - { label: "Tags", name: "tags", widget: "list" }
+              - label: "Description"
+                name: "description"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "text" }
+                  - { label: "Euskara", name: "eu", widget: "text", required: false, default: "" }
+                  - { label: "Español", name: "es", widget: "text", required: false, default: "" }
+              - label: "Media type"
+                name: "media_type"
+                widget: "select"
+                options: ["image", "video", "iframe"]
+              - { label: "Media source (URL)", name: "media_src", widget: "string" }
+              - { label: "Media alt / iframe title", name: "media_alt", widget: "string" }
+              - label: "Links"
+                name: "links"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }

@@ -18,6 +18,9 @@ author: Ander Iriondo Azpiri
 twitter_username: andeririondo # Assuming this is the username
 google_scholar: Hy-Z3PoAAAAJ
 
+exclude:
+  - cms-oauth-worker
+
 collections:
   ml:
     output: true

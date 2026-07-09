@@ -9,6 +9,7 @@ en:
   lang_switch_label: Language
   footer_connect: Connect
   footer_built: "Built with Jekyll & Modern CSS"
+  talk_sentence: 'Talk on {title} at {venue}.'
 
 eu:
   lang_name: Euskara
@@ -21,6 +22,7 @@ eu:
   lang_switch_label: Hizkuntza
   footer_connect: Kontaktua
   footer_built: "Jekyll eta CSS modernoarekin eraikia"
+  talk_sentence: '{title} buruzko hitzaldia {venue}.'
 
 es:
   lang_name: Español
@@ -33,3 +35,4 @@ es:
   lang_switch_label: Idioma
   footer_connect: Conecta
   footer_built: "Creado con Jekyll y CSS moderno"
+  talk_sentence: 'Charla sobre {title} en {venue}.'

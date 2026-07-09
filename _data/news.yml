@@ -1,0 +1,39 @@
+# News items, newest first is not required — rendered sorted by `date` (descending).
+# `tag` and `text` are per-language objects; missing eu/es fall back to en.
+- id: icra-2026-help-seeking
+  date: 2026-01-30
+  tag:
+    en: "Conference paper"
+    eu: "Kongresu artikulua"
+    es: "Artículo de conferencia"
+  text:
+    en: >-
+      Our paper "Toward Human-Like Assistance: Detecting Help-Seeking
+      in Human–Robot Collaboration via Implicit Signals" has been accepted for publication in ICRA 2026 proceedings.
+    eu: >-
+      Gure "Toward Human-Like Assistance: Detecting Help-Seeking
+      in Human–Robot Collaboration via Implicit Signals" artikulua ICRA 2026ko aktetan argitaratzeko onartu dute.
+    es: >-
+      Nuestro artículo "Toward Human-Like Assistance: Detecting Help-Seeking
+      in Human–Robot Collaboration via Implicit Signals" ha sido aceptado para su publicación en las actas de ICRA
+      2026.
+  link: ""
+
+- id: erf-2026-hartu
+  date: 2026-01-15
+  tag:
+    en: "Conference paper"
+    eu: "Kongresu artikulua"
+    es: "Artículo de conferencia"
+  text:
+    en: >-
+      Our paper "HARTU: AI-Enhanced Robotic Technologies for Flexible
+      Handling in Manufacturing and Logistics Environments" has been accepted for publication in ERF 2026 proceedings.
+    eu: >-
+      Gure "HARTU: AI-Enhanced Robotic Technologies for Flexible
+      Handling in Manufacturing and Logistics Environments" artikulua ERF 2026ko aktetan argitaratzeko onartu dute.
+    es: >-
+      Nuestro artículo "HARTU: AI-Enhanced Robotic Technologies for Flexible
+      Handling in Manufacturing and Logistics Environments" ha sido aceptado para su publicación en las actas de ERF
+      2026.
+  link: ""

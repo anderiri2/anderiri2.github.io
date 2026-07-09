@@ -1,0 +1,18 @@
+{% assign lang = page.lang | default: site.default_lang | default: 'en' %}
+{% assign t = site.data.i18n[lang] %}
+{% assign years = site.data.talks | group_by: 'year' | sort: 'name' | reverse %}
+{% for group in years %}
+<h2 class="talk-year-heading reveal">{{ group.name }}</h2>
+{% for talk in group.items %}
+{% assign quoted_title = talk.title | prepend: '"' | append: '"' %}
+{% if talk.link and talk.link != "" %}
+{% assign title_html = '<a href="' | append: talk.link | append: '">' | append: quoted_title | append: '</a>' %}
+{% else %}
+{% assign title_html = quoted_title %}
+{% endif %}
+{% assign venue_text = talk.venue[lang] | default: talk.venue.en %}
+<div class="talk-item reveal">
+  {{ t.talk_sentence | replace: '{title}', title_html | replace: '{venue}', venue_text }}
+</div>
+{% endfor %}
+{% endfor %}

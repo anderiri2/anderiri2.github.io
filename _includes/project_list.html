@@ -1,0 +1,22 @@
+{% assign lang = page.lang | default: site.default_lang | default: 'en' %}
+{% for p in site.data.projects %}
+<div class="project-card reveal">
+  <div class="project-media">
+    {% case p.media_type %}
+      {% when 'image' %}<img src="{{ p.media_src }}" alt="{{ p.media_alt }}">
+      {% when 'video' %}<video src="{{ p.media_src }}" autoplay muted loop playsinline controls></video>
+      {% when 'iframe' %}<iframe src="{{ p.media_src }}" title="{{ p.media_alt }}" allowfullscreen loading="lazy"></iframe>
+    {% endcase %}
+  </div>
+  <div class="project-body">
+    <div class="tag-chips" style="margin-top: 0; margin-bottom: 0.75rem;">
+      {% for tag in p.tags %}<span class="tag-chip">{{ tag }}</span>{% endfor %}
+    </div>
+    <h2 class="project-title">{{ p.title[lang] | default: p.title.en }}</h2>
+    <p class="project-description">{{ p.description[lang] | default: p.description.en }}</p>
+    <div class="project-links">
+      {% for l in p.links %}<a href="{{ l.url }}" target="_blank">{{ l.label }}</a>{% endfor %}
+    </div>
+  </div>
+</div>
+{% endfor %}

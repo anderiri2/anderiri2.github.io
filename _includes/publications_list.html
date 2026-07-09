@@ -1,0 +1,16 @@
+{% for pub in site.data.publications %}
+<div class="publication-card reveal">
+  {% if pub.video and pub.video != "" %}
+  <div class="publication-video">
+    <iframe src="{{ pub.video }}" title="{{ pub.title }}" loading="lazy" allowfullscreen></iframe>
+  </div>
+  {% else %}
+  <img src="{{ pub.image }}" class="publication-image" alt="{{ pub.title }}">
+  {% endif %}
+  <div class="publication-content">
+    <div class="publication-title">{{ pub.title }}</div>
+    <div class="publication-authors">{{ pub.authors }}</div>
+    <a href="{{ pub.link }}" class="publication-venue">{{ pub.venue }}</a>
+  </div>
+</div>
+{% endfor %}

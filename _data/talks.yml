@@ -1,0 +1,69 @@
+# Talks: `title` is single-language (talk titles/paper titles are not translated).
+# `venue` is per-language because Basque grammar bakes a case suffix into the
+# venue name and Spanish phrasing inserts words like "la conferencia" — a
+# single fixed sentence joiner can't reproduce that mechanically, so the
+# already-correctly-declined venue text is stored once per language instead.
+# The surrounding sentence ("Talk on {title} at {venue}.") lives in
+# _data/i18n.yml as `talk_sentence`, one template per language.
+- id: erf2025-virtual-to-reality
+  year: 2025
+  title: "Virtual to Reality: Simulation-Driven Perception and Grasping for Robots"
+  venue:
+    en: "ERF 2025 - 12th Hybrid Production Systems Workshop (Stuttgart)"
+    eu: "ERF 2025 - 12th Hybrid Production Systems Workshop-en (Stuttgart)"
+    es: "ERF 2025 - 12th Hybrid Production Systems Workshop (Stuttgart)"
+  link: ""
+
+- id: icara2025-synthetic-data
+  year: 2025
+  title: "Simulation-Based Synthetic Data Generation for Automated Training of Bin-Picking Segmentation Models"
+  venue:
+    en: "ICARA conference 2025 (Zagreb)"
+    eu: "ICARA 2025 kongresuan (Zagreb)"
+    es: "la conferencia ICARA 2025 (Zagreb)"
+  link: ""
+
+- id: kisa2022-ia-robotica-industrial
+  year: 2022
+  title: "Inteligencia artificial en robótica industrial"
+  venue:
+    en: "the KISA master of the University of the Basque Country (UPV/EHU)"
+    eu: "Euskal Herriko Unibertsitateko (UPV/EHU) KISA masterrean"
+    es: "el máster KISA de la Universidad del País Vasco (UPV/EHU)"
+  link: ""
+
+- id: erf2021-affordance-grasping
+  year: 2021
+  title: "Affordance-based Grasping Point Detection using Graph Convolutional Networks for Industrial Bin-Picking applications"
+  venue:
+    en: "European Robotics Forum (ERF) 2021 (online)"
+    eu: "European Robotics Forum (ERF) 2021-en (online)"
+    es: "el European Robotics Forum (ERF) 2021 (online)"
+  link: "https://drive.google.com/file/d/1tdyN69yfzVHM9axG4-LLJDIknoETk5Bw/view"
+
+- id: erf2020-ai-intralogistics
+  year: 2020
+  title: "Artificial Intelligence in robotics for intralogistics applications"
+  venue:
+    en: "European Robotics Forum (ERF) 2020 at Malaga"
+    eu: "European Robotics Forum (ERF) 2020an, Malagan"
+    es: "el European Robotics Forum (ERF) 2020 en Málaga"
+  link: 'https://drive.google.com/file/d/1ISoi\_gXWrXVSLgJmwzi3pNN3PTICSTK8/view'
+
+- id: erf2019-pick-and-place
+  year: 2019
+  title: "Pick and Place Operations in Logistics Using a Mobile Manipulator Controlled with Deep Reinforcement Learning"
+  venue:
+    en: "European Robotics Forum (ERF) 2019 at Bucharest"
+    eu: "European Robotics Forum (ERF) 2019an, Bukaresten"
+    es: "el European Robotics Forum (ERF) 2019 en Bucarest"
+  link: 'https://zenodo.org/record/3458219\#.Yrsl3i8lMvE'
+
+- id: erf2019-intelligent-flexible-safe
+  year: 2019
+  title: "Intelligent, flexible and safe operations in future factories"
+  venue:
+    en: "European Robotics Forum (ERF) 2019 at Bucharest"
+    eu: "European Robotics Forum (ERF) 2019an, Bukaresten"
+    es: "el European Robotics Forum (ERF) 2019 en Bucarest"
+  link: 'https://roboception.com/wp-content/uploads/2019/04/ERF2019-Intelligent\_-flexible\_and\_safe\_operations-Tekniker.pdf'

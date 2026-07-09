@@ -1,0 +1,14 @@
+{% assign lang = page.lang | default: site.default_lang | default: 'en' %}
+{% assign entries = site.data.cv[include.section] %}
+{% for e in entries %}
+<div class="cv-entry reveal">
+  <div class="cv-date">{{ e.date[lang] | default: e.date.en }}</div>
+  <div>
+    <div class="cv-entry-head">
+      <span class="cv-entry-title">{{ e.title[lang] | default: e.title.en }}{% if e.tag and e.tag[lang] and e.tag[lang] != "" %} <span class="cv-tag">{{ e.tag[lang] | default: e.tag.en }}</span>{% endif %}</span>
+      <span class="cv-entry-org">{{ e.org[lang] | default: e.org.en }}</span>
+    </div>
+    <div class="cv-entry-detail">{{ e.detail[lang] | default: e.detail.en }}</div>
+  </div>
+</div>
+{% endfor %}
