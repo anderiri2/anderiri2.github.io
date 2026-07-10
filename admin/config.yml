@@ -20,7 +20,11 @@ collections:
         label: "News items"
         file: _data/news.yml
         fields:
-          - { label: "Items", name: "items", widget: "list", root: true, fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            root: true
+            fields:
               - { label: "ID (slug)", name: "id", widget: "string" }
               - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
               - label: "Tag"
