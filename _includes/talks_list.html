@@ -12,7 +12,7 @@
 {% endif %}
 {% assign venue_text = talk.venue[lang] | default: talk.venue.en %}
 <div class="talk-item reveal">
-  {{ t.talk_sentence | replace: '{title}', title_html | replace: '{venue}', venue_text }}
+  {{ t.talk_sentence | replace: '%TITLE%', title_html | replace: '%VENUE%', venue_text }}
 </div>
 {% endfor %}
 {% endfor %}
