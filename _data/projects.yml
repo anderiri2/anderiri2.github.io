@@ -4,7 +4,7 @@
 - id: bin-packing-mosaic
   title:
     en: "Dynamic Mosaic Planning for a Robotic Bin-Packing System"
-    eu: "Errobota bidezko Bin-Packing Sistema baterako Mosaiko Planifikazio Dinamikoa"
+    eu: "Robot bidezko Bin-Packing sistema baterako mosaiko-planifikazio dinamikoa"
     es: "Planificación Dinámica de Mosaico para un Sistema Robótico de Bin-Packing"
   tags: ["Bin-Packing", "Manipulation", "Online Planning"]
   description:
@@ -15,7 +15,13 @@
       dynamic mosaic planner (IK-PAL) that recalculates the best packing pose in real time, accounting for drops
       and unexpected movements inside the bin. Validated on a real picking-and-packing robotic system across 7
       tests of increasing complexity.
-    eu: ""
+    eu: >-
+      PICKPLACE europar proiektuaren esparruan garatua, sistema honek erreferentzia bakoitzerako birkonfiguraziorik
+      behar izan gabe askotariko objektuak ontzietan paketatzea ahalbidetzen dio robot bati. Hartutako piezaren
+      zein helburuko kaxaren lineako monitorizazioa —leku librea gehienezko espazio huts gisa (EMS) zenbatetsiz—
+      eta mosaiko-planifikatzaile dinamiko bat (IK-PAL) konbinatzen ditu; azken honek paketatze-posiziorik onena
+      denbora errealean birkalkulatzen du, ontziaren barruko erorketak eta ezusteko mugimenduak kontuan hartuta.
+      Konplexutasun handiagoko 7 probatan baliozkotu da picking-and-packing sistema robotiko erreal batean.
     es: ""
   media_type: iframe
   media_src: "https://www.youtube.com/embed/videoseries?list=PL_GgcbyQtUA8mYSnrz8svYrNeLZUWhwH1"

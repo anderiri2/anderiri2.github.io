@@ -4,7 +4,7 @@
 experience:
   - id: tekniker-phd-researcher
     date: {en: "2023 – today", eu: "2023 – gaur egun", es: "2023 – actualidad"}
-    title: {en: "PhD researcher", eu: "Doktore ikertzailea", es: "Investigador Doctor"}
+    title: {en: "PhD researcher", eu: "Ikertzaile doktorea", es: "Investigador Doctor"}
     org: {en: "Fundación Tekniker", eu: "Fundación Tekniker", es: "Fundación Tekniker"}
     detail:
       en: "Artificial intelligence, flexible robotics and computer vision."
@@ -13,29 +13,29 @@ experience:
 
   - id: tekniker-predoctoral-researcher
     date: {en: "2018 – 2023", eu: "2018 – 2023", es: "2018 – 2023"}
-    title: {en: "Pre-doctoral researcher", eu: "Ikertzaile predoktorala", es: "Investigador predoctoral"}
+    title: {en: "Pre-doctoral researcher", eu: "Doktoretza-aurreko ikertzailea", es: "Investigador predoctoral"}
     org: {en: "Fundación Tekniker", eu: "Fundación Tekniker", es: "Fundación Tekniker"}
     detail:
       en: "Thesis: Advances in flexible manipulation through the application of AI-based techniques."
-      eu: "Tesia: Manipulazio malguaren aurrerapenak, AAn oinarritutako teknikak aplikatuz."
+      eu: "Tesia: Manipulazio malguko aurrerapenak, AA-n oinarritutako teknikak aplikatuz."
       es: "Tesis: Avances en manipulación flexible mediante la aplicación de técnicas basadas en IA."
 
   - id: tekniker-internship-master-thesis
     date: {en: "2017 – 2018", eu: "2017 – 2018", es: "2017 – 2018"}
-    title: {en: "Internship & master thesis", eu: "Praktikak eta master amaierako lana", es: "Prácticas y trabajo fin de máster"}
+    title: {en: "Internship & master thesis", eu: "Praktikak eta master amaierako lana (MAL)", es: "Prácticas y trabajo fin de máster"}
     org: {en: "Fundación Tekniker", eu: "Fundación Tekniker", es: "Fundación Tekniker"}
     detail:
       en: "Thesis: Control of a mobile manipulator robot with deep reinforcement learning."
-      eu: "Tesia: Robot manipulatzaile mugikor baten kontrola, errefortzuko ikaskuntza sakonarekin."
+      eu: "Tesia: Robot manipulatzaile mugikor baten kontrola, errefortzu bidezko ikaskuntza sakonaren bidez."
       es: "Tesis: Control de un robot manipulador móvil mediante aprendizaje por refuerzo profundo."
 
   - id: tekniker-end-of-degree-project
     date: {en: "2017", eu: "2017", es: "2017"}
-    title: {en: "End-of-degree project", eu: "Gradu amaierako lana", es: "Trabajo Fin de Grado"}
+    title: {en: "End-of-degree project", eu: "Gradu amaierako lana (GAL)", es: "Trabajo Fin de Grado"}
     org: {en: "Fundación Tekniker", eu: "Fundación Tekniker", es: "Fundación Tekniker"}
     detail:
       en: "Thesis: Development of an Android app for the interaction with a social robot, KTbot."
-      eu: "Tesia: KTbot robot sozialarekin interakzioa izateko Android aplikazio baten garapena."
+      eu: "Tesia: KTbot robot sozialarekin elkarreragiteko Android aplikazio baten garapena."
       es: "Tesis: Desarrollo de una aplicación Android para la interacción con un robot social, KTbot."
 
 education:
@@ -49,7 +49,7 @@ education:
     date: {en: "2017 – 2018", eu: "2017 – 2018", es: "2017 – 2018"}
     title:
       en: "MSc in Computational Engineering & Intelligent Systems"
-      eu: "Ingeniaritza Konputazionaleko eta Sistema Adimendunen Masterra"
+      eu: "Ingeniaritza Konputazionaleko eta Sistema Adimendunetako Masterra"
       es: "Máster en Ingeniería Computacional y Sistemas Inteligentes"
     org: {en: "UPV/EHU · San Sebastián", eu: "UPV/EHU · Donostia", es: "UPV/EHU · San Sebastián"}
     detail: {en: "Faculty of Informatics.", eu: "Informatika Fakultatea.", es: "Facultad de Informática."}
@@ -68,7 +68,7 @@ projects:
     org: {en: "Transmisiones", eu: "Transmisiones", es: "Transmisiones"}
     detail:
       en: "Project coordination. Tekniker's budget: 700 K€."
-      eu: "Proiektuaren koordinazioa. Tekniker-en aurrekontua: 700 K€."
+      eu: "Proiektuaren koordinazioa. Teknikerren aurrekontua: 700 K€."
       es: "Coordinación del proyecto. Presupuesto de Tekniker: 700 K€."
 
   - id: hartu
@@ -78,7 +78,7 @@ projects:
     org: {en: "Horizon Europe", eu: "Horizon Europe", es: "Horizon Europe"}
     detail:
       en: "Research on flexible manipulation through AI-based techniques. Tekniker's budget: 1 M€."
-      eu: "AAn oinarritutako tekniken bidezko manipulazio malguaren ikerketa. Tekniker-en aurrekontua: 1 M€."
+      eu: "AA-n oinarritutako tekniken bidezko manipulazio malguaren ikerketa. Teknikerren aurrekontua: 1 M€."
       es: "Investigación en manipulación flexible mediante técnicas basadas en IA. Presupuesto de Tekniker: 1 M€."
 
   - id: pick-and-place
@@ -88,7 +88,7 @@ projects:
     org: {en: "Horizon 2020", eu: "Horizon 2020", es: "Horizon 2020"}
     detail:
       en: "Research on flexible manipulation through AI-based techniques. Tekniker's budget: 1.3 M€."
-      eu: "AAn oinarritutako tekniken bidezko manipulazio malguaren ikerketa. Tekniker-en aurrekontua: 1,3 M€."
+      eu: "AA-n oinarritutako tekniken bidezko manipulazio malguaren ikerketa. Teknikerren aurrekontua: 1,3 M€."
       es: "Investigación en manipulación flexible mediante técnicas basadas en IA. Presupuesto de Tekniker: 1,3 M€."
 
 skills:
@@ -96,16 +96,16 @@ skills:
     eu: "Ikaskuntza Sakona"
     es: "Aprendizaje Profundo"
   - en: "Reinforcement Learning"
-    eu: "Errefortzuko Ikaskuntza"
+    eu: "Errefortzu bidezko ikaskuntza"
     es: "Aprendizaje por Refuerzo"
   - en: "Computer Vision"
     eu: "Ikusmen Artifiziala"
     es: "Visión por Computador"
   - en: "Robotic Manipulation"
-    eu: "Robot Manipulazioa"
+    eu: "Manipulazio robotikoa"
     es: "Manipulación Robótica"
   - en: "Hyperspectral Imaging"
-    eu: "Irudi Hiperespektrala"
+    eu: "Irudigintza hiperespektrala"
     es: "Imagen Hiperespectral"
   - en: "ROS"
     eu: "ROS"

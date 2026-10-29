@@ -13,7 +13,7 @@ en:
 
 eu:
   lang_name: Euskara
-  nav_about: Ni buruz
+  nav_about: Niri buruz
   nav_research: Ikerketa
   nav_talks: Hitzaldiak
   nav_cv: CV
@@ -21,8 +21,8 @@ eu:
   theme_toggle: Modu iluna aldatu
   lang_switch_label: Hizkuntza
   footer_connect: Kontaktua
-  footer_built: "Jekyll eta CSS modernoarekin eraikia"
-  talk_sentence: '%TITLE% buruzko hitzaldia %VENUE%.'
+  footer_built: "Jekyll eta CSS modernoarekin garatua"
+  talk_sentence: '%TITLE% hitzaldia, %VENUE%.'
 
 es:
   lang_name: Español
